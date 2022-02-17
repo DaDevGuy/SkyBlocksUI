@@ -1,0 +1,16 @@
+name: SkyBlockMenuUI
+author: Ehan
+api: 4.0.0
+version: 1.0.0
+main: Form\Meow\Main
+
+commands:
+  sbmu:
+   description: "Open SkyBlock Menu"
+   usage: "/sbmu"
+   permission: sbmu.use.cmd
+
+permissions:
+  sbmu.use.cmd:
+   description: "Permission To Open SkyBlockMenu"
+   default: true
