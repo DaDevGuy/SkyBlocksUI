@@ -68,12 +68,12 @@ class Main extends PluginBase {
         });
         $form->setTitle("SkyBlock Menu");
         $form->setContent("Your SkyBlock Menu!");
-        $form->addButton("Your Profile\nClick To View", "0", "textures/ui/arrow");
-        $form->addButton("Fast Travel\nClick TO Open Menu", "0", "textures/ui/arrow");
-        $form->addButton("Bank\nClick To Open Bank", "0", "textures/ui/arrow");
-        $form->addButton("Jobs\nClick To Open Job Menu", "0", "textures/ui/arrow");
-        $form->addButton("Shop\nClick To Open Shop", "0", "textures/ui/arrow");
-        $form->addButton("Island\nGo To Your Island", "0", "textures/ui/arrow");
+        $form->addButton("Your Profile\nClick To View", "0", "textures/ui/icon_steve");
+        $form->addButton("Fast Travel\nClick TO Open Menu", "0", "textures/ui/icon_bookshelf");
+        $form->addButton("Bank\nClick To Open Bank", "0", "textures/ui/absorption_heart");
+        $form->addButton("Jobs\nClick To Open Job Menu", "0", "textures/ui/icon_balloon");
+        $form->addButton("Shop\nClick To Open Shop", "0", "textures/ui/icon_cake");
+        $form->addButton("Island\nGo To Your Island", "0", "textures/blocks/grass_block_snow");
         $form->sendToPlayer($player);
         return $form;
     }
