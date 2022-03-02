@@ -16,7 +16,7 @@ A plugin that will show your server rules in UI form. To open RulesUI, simply ty
 
 | Command | Default Description | Permission | Default |
 | --- | --- | --- | --- |
-| `/rules` | Server rules in UI form | `rules.ui.cmd` | true |
+| `/sbmu` | Server skyblock in UI form | `sbmu.use.cmd` | true |
 
 
 
