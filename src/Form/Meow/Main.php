@@ -11,15 +11,15 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
 use Form\Meow\libs\jojoe77777\FormAPI\SimpleForm;
-class Main extends PluginBase {
+class Main extends PluginBase implements Listener
+{
 
     public function onEnable(): void {
-        $this->getLogger()->info("Enabled By DaDevGuy!");
+        @mkdir($this->getDataFolder());
+        $this->saveDefaultConfig();
+        $this->getResource("config.yml");
     }
 
-    public function onDisable(): void {
-        $this->getLogger()->info("Plugin Disabled!");
-    }
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 
         if($command->getName() == "sbmu"){
@@ -41,27 +41,27 @@ class Main extends PluginBase {
 
             switch($data){
                 case 0:
-                    $player->sendMessage("Wait For Party Update");
+                    $this->getServer()->getCommandMap()->dispatch($player, $this->getConfig()->get("profile"));
                 break;
 
                 case 1:
-                    $this->getServer()->getCommandMap()->dispatch($player, "fasttravelui");             
+                    $$this->getServer()->getCommandMap()->dispatch($player, $this->getConfig()->get("fasttravel"));
                 break;
 
                 case 2:
-                    $this->getServer()->getCommandMap()->dispatch($player, "bank");
+                    $this->getServer()->getCommandMap()->dispatch($player, $this->getConfig()->get("bank"));
                 break;
                 
                 case 3:
-                    $this->getServer()->getCommandMap()->dispatch($player, "job");
+                    $this->getServer()->getCommandMap()->dispatch($player, $this->getConfig()->get("job"));
                 break;
 
                 case 4:
-                    $this->getServer()->getCommandMap()->dispatch($player, "shop");
+                    $this->getServer()->getCommandMap()->dispatch($player, $this->getConfig()->get("shop"));
                 break;
 
                 case 5:
-                    $this->getServer()->getCommandMap()->dispatch($player, "is go");
+                    $this->getServer()->getCommandMap()->dispatch($player, $this->getConfig()->get("island"));
                 break;
             }
 
