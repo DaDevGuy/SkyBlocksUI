@@ -11,7 +11,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
 use Form\Meow\libs\jojoe77777\FormAPI\SimpleForm;
-class Main extends PluginBase implements Listener
+class Main extends PluginBase
 {
 
     public function onEnable(): void {
