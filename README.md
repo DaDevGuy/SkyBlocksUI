@@ -1,9 +1,9 @@
 A plugin that will show your server rules in UI form. To open RulesUI, simply type `/sbmu` in the chat.
 
 # Features
-
-- Use `/sbmu` For Opening Menu
-- use Textures Configure Menu
+- Use `config.yml` for custom commands.
+- Use `/sbmu` For Opening Menu.
+- use Textures Configure Menu.
 
 # How to Install
 
