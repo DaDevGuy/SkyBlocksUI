@@ -66,7 +66,6 @@ class Main extends PluginBase
             }
 
         });
-        "{player}" => $player->getName();
         $form->setTitle("SkyBlock Menu");
         $form->setContent("Your SkyBlock Menu!");
         $form->addButton("Your Profile\nClick To View", "0", "textures/ui/icon_steve");
