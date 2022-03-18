@@ -24,13 +24,9 @@ class Main extends PluginBase
         @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
         $this->getResource("config.yml");
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
-       public function onEnable() : void {
-      $this->getLogger()->info("===========SBMENU By Bloodsucker Is Enable=============");
-      $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    }
-
-
+    
     public function onJoin(PlayerJoinEvent $event) {
         $sender = $event->getPlayer();
         $item = ItemFactory::getInstance()->get(399, 0, 1);
