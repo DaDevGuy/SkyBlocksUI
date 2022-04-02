@@ -2,11 +2,23 @@
 
 config-version: 2
 
-#Change Values Here!
+#commands
 
-profile: ""
-fasttravel: ""
-bank: ""
-job: ""
-shop: ""
-island: ""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#textures
+
+skyblockt: ""
