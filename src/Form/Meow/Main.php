@@ -155,7 +155,7 @@ class Main extends PluginBase
   $form->addButton("§l§eENCHANTMENT SHOP\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig()->get("enchantshopt"));
   $form->addButton("§l§eENDER CHEST\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig()->get("enderchestt"));
   $form->addButton("§l§eWORK BENCH\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig()->get("workbencht"));
-  $form->addButton("§l§eAUCTION HOUSE\n§l§9»» §l§3TAP TO OPEN", 0, $this->()getConfig->get("aht"));
+  $form->addButton("§l§eAUCTION HOUSE\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig()->get("aht"));
   $form->addButton("§l§eBANK\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig()->get("bankt"));
   $form->addButton("§l§eBAZAAR\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig()->get("bazaartt"));
   $form->addButton("§l§eTRAVEL ISLAND\n§l§9»» §l§3TAP TO OPEN", 0, $this->getConfig->get("Travelislandt"));
