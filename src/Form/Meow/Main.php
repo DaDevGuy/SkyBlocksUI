@@ -23,7 +23,7 @@ use pocketmine\event\player\PlayerDropItemEvent;
 
 use Form\Meow\libs\jojoe77777\FormAPI\SimpleForm;
 
-class Main extends PluginBase
+class Main extends PluginBase implements Listener
 {
 
     public function onEnable(): void {
@@ -33,6 +33,7 @@ class Main extends PluginBase
     }
 
     public function onJoin(PlayerJoinEvent $event) {
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $sender = $event->getPlayer();
         $item = ItemFactory::getInstance()->get(399, 0, 1);
         $item->setCustomName("§r§l§aSKYBLOCK MENU\n§r§e(Right-Click)");
